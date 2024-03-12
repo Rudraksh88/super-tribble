@@ -1,8 +1,11 @@
 <script>
     import TCard from './timeline-card.svelte';
+    import duggupLogo from '$lib/images/duggup.jpg';
+    import betterupLogo from '$lib/images/betterup.jpeg';
+
     export let companyName = 'Duggup';
     export let companyRole = 'Co-Founder and CEO';
-    export let companyLogo = 'https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/11/5a/f0/115af004-378e-cf28-95b2-21de2afd5853/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg';
+    export let companyLogo = companyName === 'Duggup' ? duggupLogo : betterupLogo;
     export let itemDate = 'Joined - 12th May 2021';
     export let jobType = 'Full-time';
     export let location = 'Remote';
@@ -12,8 +15,6 @@
     export let card1 = 'Card1 Desc';
     export let card2 = 'Card2 Desc';
     export let jobLocation;
-
-    companyLogo = companyName === 'Duggup' ? companyLogo : "https://media.licdn.com/dms/image/C4D0BAQFLI3Q4odBnlA/company-logo_200_200/0/1654006359450/betterup_logo?e=2147483647&v=beta&t=ApbBeFWfyv9z8IeYOapiOUW8ckswN_Zx5QwJ-HOjyW0";
 </script>
 
 <div class="flex items-center w-full border-l border-gray-400 border-dashed pb-10 last-of-type:pb-20">
